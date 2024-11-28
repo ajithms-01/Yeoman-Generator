@@ -29,7 +29,6 @@ CREATE TABLE employee (
   phone_number VARCHAR(15) DEFAULT NULL,
   salary DECIMAL(10, 2) NOT NULL,
   hire_date DATETIME DEFAULT CURRENT_TIMESTAMP,
-  job_title ENUM('Intern', 'Junior', 'Senior', 'Manager', 'Director') NOT NULL DEFAULT 'Junior', -- New ENUM column
   dept_id INT DEFAULT NULL,
   PRIMARY KEY (emp_id),
   FOREIGN KEY (dept_id) REFERENCES department (dept_id) ON DELETE SET NULL
