@@ -11,7 +11,7 @@ DROP TABLE IF EXISTS `project`;
 DROP TABLE IF EXISTS `employee_project`;
 
 -- Table 1: Department
-CREATE TABLE department (
+CREATE TABLE `department` (
   `dept_id` INT AUTO_INCREMENT NOT NULL,
   `dept_name` VARCHAR(100) NOT NULL,
   `location` VARCHAR(255) DEFAULT NULL,
@@ -19,7 +19,7 @@ CREATE TABLE department (
 );
 
 -- Table 2: Employee
-CREATE TABLE employee (
+CREATE TABLE `employee` (
   `emp_id` INT AUTO_INCREMENT NOT NULL,
   `first_name` VARCHAR(50) NOT NULL,
   `last_name` VARCHAR(50) NOT NULL,
