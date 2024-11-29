@@ -27,7 +27,7 @@ CREATE TABLE `employee` (
   `dob` DATE DEFAULT NULL,
   `email` VARCHAR(255) DEFAULT 'sample@gmail.com',
   `phone_number` VARCHAR(15) DEFAULT NULL,
-  `salary` DECIMAL(10, 2) NOT NULL,
+  `salary` DECIMAL(10,2) NOT NULL,
   `hire_date` DATETIME DEFAULT CURRENT_TIMESTAMP,
   `job_title` ENUM('Intern', 'Junior', 'Senior', 'Manager', 'Director') NOT NULL DEFAULT 'Junior', -- New ENUM column
   `dept_id` INT DEFAULT NULL,
@@ -41,7 +41,7 @@ CREATE TABLE `project` (
   `proj_name` VARCHAR(255) NOT NULL,
   `start_date` DATE DEFAULT NULL,
   `end_date` DATE DEFAULT NULL,
-  `budget` DECIMAL(12, 2) NOT NULL,
+  `budget` DECIMAL(12,2) NOT NULL,
   `proj_status` ENUM('Not Started', 'In Progress', 'Completed', 'On Hold') NOT NULL DEFAULT 'Not Started', -- New ENUM column
   PRIMARY KEY (`proj_id`)
 );
@@ -51,7 +51,7 @@ CREATE TABLE `employee_project` (
   `emp_id` INT NOT NULL,
   `proj_id` INT NOT NULL,
   `role` VARCHAR(50) DEFAULT NULL,
-  `hours_worked` DECIMAL(5, 2) DEFAULT 0.00,
+  `hours_worked` DECIMAL(5,2) DEFAULT 0.00,
   PRIMARY KEY (`emp_id`, `proj_id`),
   FOREIGN KEY (`emp_id`) REFERENCES `employee` (`emp_id`) ON DELETE CASCADE,
   FOREIGN KEY (`proj_id`) REFERENCES `project` (`proj_id`) ON DELETE CASCADE
