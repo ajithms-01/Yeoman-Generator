@@ -27,7 +27,7 @@ CREATE TABLE `employee` (
   `dob` DATE DEFAULT NULL,
   `email` VARCHAR(255) DEFAULT 'sample@gmail.com',
   `phone_number` VARCHAR(15) DEFAULT NULL,
-  `salary` DECIMAL(10,2) NOT NULL,
+  `salary` DECIMAL(10, 2) NOT NULL,
   `hire_date` DATETIME DEFAULT CURRENT_TIMESTAMP,
   `job_title` ENUM('Intern', 'Junior', 'Senior', 'Manager', 'Director') NOT NULL DEFAULT 'Junior', -- New ENUM column
   `dept_id` INT DEFAULT NULL,
