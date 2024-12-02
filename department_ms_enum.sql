@@ -54,5 +54,5 @@ CREATE TABLE `employee_project` (
   `hours_worked` DECIMAL(5,2) DEFAULT 0.00,
   PRIMARY KEY (`emp_id`, `proj_id`),
   FOREIGN KEY (`emp_id`) REFERENCES `employee` (`emp_id`) ON DELETE CASCADE,
-  FOREIGN KEY (`proj_id`) REFERENCES `project` (`proj_id`) ON UPDATE CASCADE
+  FOREIGN KEY (`proj_id`) REFERENCES `project` (`proj_id`) ON UPDATE NO ACTION
 );
