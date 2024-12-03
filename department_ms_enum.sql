@@ -13,10 +13,9 @@ DROP TABLE IF EXISTS `employee_project`;
 -- Table 1: Department
 CREATE TABLE `department` (
   `dept_id` INT AUTO_INCREMENT NOT NULL,
-  `dept_id2` INT NOT NULL,
   `dept_name` VARCHAR(100) NOT NULL,
   `location` VARCHAR(255) DEFAULT NULL,
-  PRIMARY KEY (`dept_id`,`dept_id2`)
+  PRIMARY KEY (`dept_id`)
 );
 
 -- Table 2: Employee
