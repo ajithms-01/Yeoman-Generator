@@ -47,7 +47,7 @@ CREATE TABLE `project` (
 );
 
 -- Table 4: Employee_Project (Many-to-Many relationship)
-CREATE TABLE `employeeproject` (
+CREATE TABLE `employee_project` (
   `emp_id` INT NOT NULL,
   `proj_id` INT NOT NULL,
   `role` VARCHAR(50) DEFAULT NULL,
