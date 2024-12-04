@@ -15,7 +15,7 @@ CREATE TABLE `department` (
   `dept_id` INT AUTO_INCREMENT NOT NULL,
   `dept_name` VARCHAR(100) NOT NULL,
   `location` VARCHAR(255) DEFAULT NULL,
-  PRIMARY KEY (`dept_id`)
+  PRIMARY KEY (`dept_id`,`dept_name`)
 );
 
 -- Table 2: Employee
